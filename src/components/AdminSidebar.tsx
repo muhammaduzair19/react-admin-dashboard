@@ -2,14 +2,11 @@ import { IconType } from "react-icons"
 import { AiFillFileText } from "react-icons/ai"
 import { FaChartBar, FaChartLine, FaChartPie, FaGamepad, FaStopwatch } from "react-icons/fa"
 import { IoIosPeople } from "react-icons/io"
-import { RiCoupon3Fill, RiDashboard2Fill, RiDashboardFill, RiShoppingBag3Fill, } from "react-icons/ri"
+import { RiCoupon3Fill, RiDashboardFill, RiShoppingBag3Fill, } from "react-icons/ri"
 import { Link, Location, useLocation } from "react-router-dom"
 
 const AdminSidebar = () => {
     const location = useLocation();
-
-
-
     return (
         <aside>
             <h2>Logo.</h2>
@@ -19,7 +16,6 @@ const AdminSidebar = () => {
         </aside>
     )
 }
-
 
 const DivOne = ({ location }: { location: Location }) => (
     <div>
@@ -105,7 +101,6 @@ const DivThree = ({ location }: { location: Location }) => (
         </ul>
     </div>
 )
-
 
 type LiProps = {
     url: string,
